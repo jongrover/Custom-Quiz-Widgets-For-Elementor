@@ -1,14 +1,14 @@
 <?php
 namespace Elementor;
 
-class Question_Select_Menu_Widget extends Widget_Base {
+class Question_Radio_Menu_Widget extends Widget_Base {
 
 	public function get_name() {
-		return 'question-select-menu';
+		return 'question-radio-menu';
 	}
 
 	public function get_title() {
-		return 'Question > Select Menu';
+		return 'Question > Radio Menu';
 	}
 
 	public function get_icon() {
@@ -89,23 +89,22 @@ class Question_Select_Menu_Widget extends Widget_Base {
 	protected function render() {
     $settings = $this->get_settings_for_display();
     echo "<div class='question-box'>$settings[question]<br>
-            <select class='question-select' data-correct='$settings[correct]'>
-              <option value='' selected>select</option>
-              <option value='a'>$settings[a]</option>
-              <option value='b'>$settings[b]</option>
-              <option value='c'>$settings[c]</option>
-            </select>
-            <span class='response' style='display:inline-block;margin:0px 0px 0px 5px;'></span>
+		        <form class="question-radio" data-correct='$settings[correct]'>
+						  <input type="radio" name="answer-radio" value="a"> $settings[a]<br>
+						  <input type="radio" name="answer-radio" value="b"> $settings[b]<br>
+						  <input type="radio" name="answer-radio" value="c"> $settings[c]<br>
+						</form>
+						<span class='response' style='display:inline-block;margin:0px 0px 0px 5px;'></span>
           </div>
           <script>
           jQuery(function () {
-            jQuery('.question-select').change(function () {
-              var correct = jQuery(this).data('correct');
-              var answer = jQuery(this).val();
+            jQuery('.question-radio').find('input[name=answer-radio]').change(function () {
+              var correct = jQuery(this).parent().data('correct');
+              var answer = jQuery(this).parent().find('input[name=answer-radio]:checked').val();
               if (answer === correct) {
-                jQuery(this).next('.response').html('<span style=\"background:lime;border:1px solid green;padding:3px 5px;\">Correct!</span>');
+                jQuery(this).parent().next('.response').html('<span style=\"background:lime;border:1px solid green;padding:3px 5px;\">Correct!</span>');
               } else {
-                jQuery(this).next('.response').html('<span style=\"background:pink;border:1px solid red;padding:3px 5px;\">Incorrect, try again!</span>');
+                jQuery(this).parent().next('.response').html('<span style=\"background:pink;border:1px solid red;padding:3px 5px;\">Incorrect, try again!</span>');
               }
             });
           });

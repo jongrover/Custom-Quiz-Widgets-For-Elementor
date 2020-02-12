@@ -89,10 +89,10 @@ class Question_Radio_Menu_Widget extends Widget_Base {
 	protected function render() {
     $settings = $this->get_settings_for_display();
     echo "<div class='question-box'>$settings[question]<br>
-		        <form class="question-radio" data-correct='$settings[correct]'>
-						  <input type="radio" name="answer-radio" value="a"> $settings[a]<br>
-						  <input type="radio" name="answer-radio" value="b"> $settings[b]<br>
-						  <input type="radio" name="answer-radio" value="c"> $settings[c]<br>
+		        <form class='question-radio' data-correct='$settings[correct]'>
+						  <input type='radio' name='answer-radio' value='a'> $settings[a]<br>
+						  <input type='radio' name='answer-radio' value='b'> $settings[b]<br>
+						  <input type='radio' name='answer-radio' value='c'> $settings[c]<br>
 						</form>
 						<span class='response' style='display:inline-block;margin:0px 0px 0px 5px;'></span>
           </div>

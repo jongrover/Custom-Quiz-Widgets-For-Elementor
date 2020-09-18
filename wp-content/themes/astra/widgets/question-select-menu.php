@@ -96,20 +96,7 @@ class Question_Select_Menu_Widget extends Widget_Base {
               <option value='c'>$settings[c]</option>
             </select>
             <span class='response' style='display:inline-block;margin:0px 0px 0px 5px;'></span>
-          </div>
-          <script>
-          jQuery(function () {
-            jQuery('.question-select').change(function () {
-              var correct = jQuery(this).data('correct');
-              var answer = jQuery(this).val();
-              if (answer === correct) {
-                jQuery(this).next('.response').html('<span style=\"background:lime;border:1px solid green;padding:3px 5px;\">Correct!</span>');
-              } else {
-                jQuery(this).next('.response').html('<span style=\"background:pink;border:1px solid red;padding:3px 5px;\">Incorrect, try again!</span>');
-              }
-            });
-          });
-          </script>";
+          </div>";
   }
 
 	protected function _content_template() {

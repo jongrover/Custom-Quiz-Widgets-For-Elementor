@@ -95,20 +95,7 @@ class Question_Radio_Menu_Widget extends Widget_Base {
 						  <input type='radio' name='answer-radio' value='c'> $settings[c]<br>
 						</form>
 						<span class='response' style='display:inline-block;margin:0px 0px 0px 5px;'></span>
-          </div>
-          <script>
-          jQuery(function () {
-            jQuery('.question-radio').find('input[name=answer-radio]').change(function () {
-              var correct = jQuery(this).parent().data('correct');
-              var answer = jQuery(this).parent().find('input[name=answer-radio]:checked').val();
-              if (answer === correct) {
-                jQuery(this).parent().next('.response').html('<span style=\"background:lime;border:1px solid green;padding:3px 5px;\">Correct!</span>');
-              } else {
-                jQuery(this).parent().next('.response').html('<span style=\"background:pink;border:1px solid red;padding:3px 5px;\">Incorrect, try again!</span>');
-              }
-            });
-          });
-          </script>";
+          </div>";
   }
 
 	protected function _content_template() {

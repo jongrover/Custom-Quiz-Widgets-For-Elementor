@@ -113,76 +113,26 @@ class Question_Drag_Drop_Widget extends Widget_Base {
 
 	protected function render() {
     $settings = $this->get_settings_for_display();
-		if(!empty($settings[sentence_start])){
-			$sentence_start = "<span class='sentence-start'>$settings[sentence_start] </span>";
-		} else {
-			$sentence_start = ""
-		}
-		if(!empty($settings[sentence_end])){
-			$sentence_end = "<span class='sentence-end'>$settings[sentence_end]</span>";
-		} else {
-			$sentence_end = "";
-		}
-		if (!empty($settings[w1])) {
-			$w1 = "<li class='word' style='display: inline-block; margin: 0; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w1] </li>"
-		} else {
-			$w1 = "";
-		}
-		if (!empty($settings[w2])) {
-			$w2 = "<li class='word' style='display: inline-block; margin: 0; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w2] </li>"
-		} else {
-			$w2 = "";
-		}
-		if (!empty($settings[w3])) {
-			$w3 = "<li class='word' style='display: inline-block; margin: 0; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w3] </li>"
-		} else {
-			$w3 = "";
-		}
-		if (!empty($settings[w4])) {
-			$w4 = "<li class='word' style='display: inline-block; margin: 0; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w4] </li>"
-		} else {
-			$w4 = "";
-		}
-		if (!empty($settings[w5])) {
-			$w5 = "<li class='word' style='display: inline-block; margin: 0; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w5] </li>"
-		} else {
-			$w5 = "";
-		}
+
+    # Sanititize input
+		$settings[sentence_start] = trim($settings[sentence_start]);
+		$settings[sentence_end] = trim($settings[sentence_end]);
+		$settings[w1] = trim($settings[w1]);
+		$settings[w2] = trim($settings[w2]);
+		$settings[w3] = trim($settings[w3]);
+		$settings[w4] = trim($settings[w4]);
+		$settings[w5] = trim($settings[w5]);
+		$settings[correct_sentence] = trim($settings[correct_sentence]);
+
     echo "<div class='question-box'>
 		        <div class='sentence' data-answer='$settings[correct_sentence]' style='margin: 0 0 10px 0;'>
-              ".$sentence_start."
-              <ul class='words place-words' style='display: inline-block; margin: 0; padding: 0; width: auto; min-width: 135px; height: 30px; border: 1px dashed #cccccc; vertical-align: bottom;'></ul>
-              ".$sentence_start."
+              <span class='sentence-start'>$settings[sentence_start] </span>
+              <ul class='words place-words' style='display: inline-block; margin: 0 0 10px 0; padding: 0; height: 41px; min-width: 100px; border: 1px dashed #cccccc; vertical-align: bottom;'></ul>
+              <span class='sentence-end'>$settings[sentence_end]</span>
+							<ul class='words supply-words' style='margin: 0; display: block;'><li class='word' style='display: inline-block; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w1] </li><li class='word' style='display: inline-block; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w2] </li><li class='word' style='display: inline-block; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w3] </li><li class='word' style='display: inline-block; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w4] </li><li class='word' style='display: inline-block; border: 1px solid #000000; padding: 5px 10px; cursor: pointer;'>$settings[w5] </li></ul>
+							<span class='response' style='display:block; margin: 0px 0px 0px 5px;'></span>
             </div>
-            <ul class='words supply-words'>".$w1.$w2.$w3.$w4.$w5."</ul>
-						<span class='response' style='display:inline-block;margin:0px 0px 0px 5px;'></span>
-          </div>
-          <script>
-          jQuery(function () {
-						jQuery('.words').sortable({
-						  connectWith: '.place-words, .supply-words',
-						  beforeStop: function () {
-								var answer = jQuery(this).parent().find('.sentence').data('answer');
-						    if (jQuery(this).parent().find('.supply-words').text() === '') {
-						      var sentence_start = jQuery(this).parent().find('.sentence-start').text(),
-						          placed_words = jQuery(this).parent().find('.place-words').text(),
-						          sentence_end = jQuery(this).parent().find('.sentence-end').text(),
-						          solution = sentence_start+placed_words+sentence_end;
-						      if (solution === answer) {
-						        console.log('correct');
-						        jQuery(this).parent().find('.place-words').css('{background: lime}');
-										jQuery(this).parent().find('.response').html('<span style=\"background:lime;border:1px solid green;padding:3px 5px;\">Correct!</span>');
-						      } else {
-						        console.log('wrong');
-						        jQuery(this).parent().find('.place-words').css('{background: pink}');
-										jQuery(this).parent().find('.response').html('<span style=\"background:pink;border:1px solid red;padding:3px 5px;\">Incorrect, try again!</span>');
-						      }
-						    }
-						  }
-						 });
-						jQuery('.words').disableSelection();
-          });
-          </script>";
+          </div>";
   }
 
 	protected function _content_template() {

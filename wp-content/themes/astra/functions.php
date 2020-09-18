@@ -1,5 +1,21 @@
 <?php
 
+wp_enqueue_script('jquery');
+wp_enqueue_script('jquery-ui-core');
+wp_enqueue_script('jquery-ui-sortable');
+
+add_action('wp_footer', 'custom_widget_scripts');
+function custom_widget_scripts(){
+?>
+	<script src="https://learnenglishfast.com/wp-content/themes/astra/js/jqueryui-touch-punch.js"></script>
+	<script src="https://learnenglishfast.com/wp-content/themes/astra/js/drag-drop.js"></script>
+	<script src="https://learnenglishfast.com/wp-content/themes/astra/js/radio-menu.js"></script>
+	<script src="https://learnenglishfast.com/wp-content/themes/astra/js/select-menu.js"></script>
+	<script src="https://learnenglishfast.com/wp-content/themes/astra/js/recorder.js"></script>
+	<script src="https://learnenglishfast.com/wp-content/themes/astra/js/rec-playback.js"></script>
+<?php
+};
+
 // Load custom widgets_manager
 require_once('my-custom-widgets.php');
 

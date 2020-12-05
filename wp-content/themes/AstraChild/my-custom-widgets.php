@@ -17,6 +17,7 @@ class My_Elementor_Widgets {
 		require_once('widgets/question-radio-menu.php');
 		require_once('widgets/question-drag-drop.php');
 		require_once('widgets/practice-rec-playback.php');
+		require_once('widgets/prev-next-buttons.php');
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	}
 
@@ -25,6 +26,7 @@ class My_Elementor_Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Question_Radio_Menu_Widget() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Question_Drag_Drop_Widget() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Practice_Rec_Playback_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Prev_Next_Buttons_Widget() );
 	}
 
 }

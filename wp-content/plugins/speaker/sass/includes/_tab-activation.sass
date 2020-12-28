@@ -1,0 +1,87 @@
+/**
+ * Create an audio version of your posts, with a selection of more than 235+ voices across more than 40 languages and variants.
+ * Exclusively on Envato Market: https://1.envato.market/speaker
+ *
+ * @encoding        UTF-8
+ * @version         3.1.0
+ * @copyright       Copyright (C) 2018 - 2020 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Alexander Khmelnitskiy (info@alexander.khmelnitskiy.ua), Dmitry Merkulov (dmitry@merkulov.design)
+ * @support         help@merkulov.design
+ **/
+
+/**
+ * Tab: Activation.
+ **/
+.mdp-tab-name-activation
+
+  .mdp-activation-form
+    position: relative
+    padding-bottom: 30px
+
+    h3
+      margin-bottom: 30px !important
+
+    .mdc-text-field
+      margin-bottom: 1.25em
+      height: 48px
+
+    p
+      font-size: 14px
+      color: rgba(10,33,56,.75)
+
+  .mdp-activation
+    display: flex
+    justify-content: space-between
+
+    .mdp-activate-license-btn
+      height: 52px
+      width: 52px
+      padding: 0
+      border-radius: 0 8px 8px 0
+      font-size: .75rem
+      position: absolute
+      right: 2px
+      top: 54px
+      background: linear-gradient( to right, rgba( 255, 255, 255, 0 ), rgba( 255, 255, 255, 1), rgba( 255, 255, 255, 1), rgba( 255, 255, 255, 1) )
+
+      i
+        font-size: 18px
+
+      &:hover,
+      &:focus
+        background: linear-gradient( to right, rgba( 255, 255, 255, 0 ), rgba( 255, 255, 255, 1), rgba( 255, 255, 255, 1), rgba( 255, 255, 255, 1) )
+
+    .mdc-ripple-upgraded:hover::before
+      opacity: 0
+
+    .mdp-activation-faq
+      width: calc( 100% - 405px )
+
+  #mdp-speaker-subscribe
+    height: 40px
+    background: rgba(2, 116, 230, .07)
+    box-shadow: none
+    font-size: 14px
+    font-weight: 400
+    color: rgba(2, 116, 230, 1)
+    border: 1px solid rgba(2, 116, 230, 0.05)
+
+    &:hover
+      text-decoration: none
+      background: rgba(2, 116, 230, 0.1)
+      color: rgba(2, 116, 230, 1)
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,.05), 0 4px 5px 0 rgba(0,0,0,.03), 0 1px 10px 0 rgba(0,0,0,.03)
+
+/* Responsiveness */
+@media screen and (max-width: 1080px)
+
+  .mdp-tab-name-activation
+    .mdp-activation
+      flex-direction: column
+
+      .mdp-activation-form,
+      .mdp-activation-faq,
+      .mdc-input-width
+        width: 100%
+        max-width: 100% !important

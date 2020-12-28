@@ -1,0 +1,29 @@
+== Changelog ==
+
+
+Version: 2.0.3 (16-11-2020)
+New: Advanced controls for Conditional Widget.
+New: Cross domain copy-paste module (the long waited feature).
+New: Added default color scheme on Facebook Messenger widget.
+New: Added Locale on Facebook Messenger widget.
+Fix: Carent image missing for Advanced Tab.
+Fix: Ekit button js error when "add section" is clicked.
+Tweak: Instagram feed widget.
+Tweak: Improved CSS & JS.
+
+Version: 2.0.2
+Fix: Facebook feed API.
+Fix: Some spelling mistakes.
+Fix: License activation conflicting.
+
+Version: 2.0.1
+Fix: Instagram's cache issue. Posts were not properly updated.
+
+Version: 2.0.0
+New: New Unfold widget added.
+Fix: Google Map API Script is enqueueing even it's not enabled.
+Fix: Facebook Review Broken issue.
+Fix: HeaderFooter builder compatiblity.
+Added: Pagination to Blog Posts.
+Added: Import & export system for WidgetBuilder module.
+Added: New features: "dribble-feed, facebook-feed, facebook-review, instagram-feed, twitter-feed, trustpilot, unfold, yelp, zoom".

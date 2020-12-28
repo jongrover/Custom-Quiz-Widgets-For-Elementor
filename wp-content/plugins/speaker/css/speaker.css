@@ -1,0 +1,181 @@
+/**
+ * Create an audio version of your posts, with a selection of more than 235+ voices across more than 40 languages and variants.
+ * Exclusively on Envato Market: https://1.envato.market/speaker
+ *
+ * @encoding        UTF-8
+ * @version         3.1.0
+ * @copyright       Copyright (C) 2018 - 2020 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Alexander Khmelnitskiy (info@alexander.khmelnitskiy.ua), Dmitry Merkulov (dmitry@merkulov.design)
+ * @support         help@merkulov.design
+ **/
+/**
+ * Top Fixed.
+ * ===================================================================== */
+body:not(.wp-admin) .mdp-speaker-box.top-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 !important;
+  max-width: 100% !important;
+  width: 100%;
+  z-index: 999999; }
+  body:not(.wp-admin) .mdp-speaker-box.top-fixed .wp-audio-shortcode {
+    max-width: 100% !important; }
+
+/**
+ * Bottom Fixed.
+ * ===================================================================== */
+body:not(.wp-admin) .mdp-speaker-box.bottom-fixed,
+body:not(.wp-admin) .et-db #et-boc .et-l .mdp-speaker-box.bottom-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 !important;
+  max-width: 100% !important;
+  width: 100%;
+  z-index: 999999; }
+  body:not(.wp-admin) .mdp-speaker-box.bottom-fixed .wp-audio-shortcode,
+  body:not(.wp-admin) .et-db #et-boc .et-l .mdp-speaker-box.bottom-fixed .wp-audio-shortcode {
+    max-width: 100% !important; }
+
+/**
+ * Player Styles
+ * ===================================================================== */
+.mdp-speaker-box.speaker-round,
+.et-db #et-boc .et-l .mdp-speaker-box.speaker-round {
+  border-radius: 10rem;
+  height: 54px; }
+  .mdp-speaker-box.speaker-round:hover,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-round:hover {
+    box-shadow: 0 0 10px #cccccc;
+    transition: 1s; }
+  .mdp-speaker-box.speaker-round .mejs-container,
+  .mdp-speaker-box.speaker-round .mejs-embed,
+  .mdp-speaker-box.speaker-round .mejs-embed body,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-round .mejs-container,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-round .mejs-embed,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-round .mejs-embed body {
+    background: inherit;
+    border-radius: 10rem;
+    height: 54px;
+    box-shadow: none; }
+  .mdp-speaker-box.speaker-round .mejs-controls,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-round .mejs-controls {
+    background: inherit;
+    top: 7px;
+    padding: 0 12px; }
+    .mdp-speaker-box.speaker-round .mejs-controls .mejs-time-rail *,
+    .mdp-speaker-box.speaker-round .mejs-controls .mejs-horizontal-volume-slider *,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-round .mejs-controls .mejs-time-rail *,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-round .mejs-controls .mejs-horizontal-volume-slider * {
+      border-radius: 10rem; }
+    .mdp-speaker-box.speaker-round .mejs-controls .mejs-time-loaded,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-round .mejs-controls .mejs-time-loaded {
+      opacity: .25; }
+    .mdp-speaker-box.speaker-round .mejs-controls .mejs-time-current,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-round .mejs-controls .mejs-time-current {
+      background: white; }
+  .mdp-speaker-box.speaker-round audio,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-round audio {
+    display: none; }
+  .mdp-speaker-box.speaker-round *,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-round * {
+    outline: none; }
+
+.mdp-speaker-box.speaker-rounded,
+.et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded {
+  border-radius: .5rem;
+  height: 54px; }
+  .mdp-speaker-box.speaker-rounded:hover,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded:hover {
+    box-shadow: 0 0 10px #cccccc;
+    transition: 1s; }
+  .mdp-speaker-box.speaker-rounded .mejs-container,
+  .mdp-speaker-box.speaker-rounded .mejs-embed,
+  .mdp-speaker-box.speaker-rounded .mejs-embed body,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded .mejs-container,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded .mejs-embed,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded .mejs-embed body {
+    background: inherit;
+    border-radius: .5rem;
+    height: 54px; }
+  .mdp-speaker-box.speaker-rounded .mejs-controls,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded .mejs-controls {
+    background: inherit;
+    top: 7px;
+    padding: 0 12px; }
+    .mdp-speaker-box.speaker-rounded .mejs-controls .mejs-time-rail *,
+    .mdp-speaker-box.speaker-rounded .mejs-controls .mejs-horizontal-volume-slider *,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded .mejs-controls .mejs-time-rail *,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded .mejs-controls .mejs-horizontal-volume-slider * {
+      border-radius: .125rem; }
+    .mdp-speaker-box.speaker-rounded .mejs-controls .mejs-time-loaded,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded .mejs-controls .mejs-time-loaded {
+      opacity: .25; }
+    .mdp-speaker-box.speaker-rounded .mejs-controls .mejs-time-current,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded .mejs-controls .mejs-time-current {
+      background: white; }
+  .mdp-speaker-box.speaker-rounded audio,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded audio {
+    display: none; }
+  .mdp-speaker-box.speaker-rounded *,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-rounded * {
+    outline: none; }
+
+.mdp-speaker-box.speaker-squared,
+.et-db #et-boc .et-l .mdp-speaker-box.speaker-squared {
+  border-radius: 0;
+  height: 54px; }
+  .mdp-speaker-box.speaker-squared:hover,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared:hover {
+    box-shadow: 0 0 10px #cccccc;
+    transition: 1s; }
+  .mdp-speaker-box.speaker-squared .mejs-container,
+  .mdp-speaker-box.speaker-squared .mejs-embed,
+  .mdp-speaker-box.speaker-squared .mejs-embed body,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared .mejs-container,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared .mejs-embed,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared .mejs-embed body {
+    background: inherit;
+    border-radius: 0;
+    height: 54px; }
+  .mdp-speaker-box.speaker-squared .mejs-controls,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared .mejs-controls {
+    background: inherit;
+    top: 7px;
+    padding: 0 12px; }
+    .mdp-speaker-box.speaker-squared .mejs-controls .mejs-time-loaded,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared .mejs-controls .mejs-time-loaded {
+      opacity: .25; }
+    .mdp-speaker-box.speaker-squared .mejs-controls .mejs-time-current,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared .mejs-controls .mejs-time-current {
+      background: white; }
+  .mdp-speaker-box.speaker-squared audio,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared audio {
+    display: none; }
+  .mdp-speaker-box.speaker-squared *,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared * {
+    outline: none; }
+  .mdp-speaker-box.speaker-squared.speaker-wp-default,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared.speaker-wp-default {
+    background: transparent !important; }
+    .mdp-speaker-box.speaker-squared.speaker-wp-default audio,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared.speaker-wp-default audio {
+      outline: none; }
+  .mdp-speaker-box.speaker-squared.speaker-browser-default,
+  .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared.speaker-browser-default {
+    background: transparent !important; }
+    .mdp-speaker-box.speaker-squared.speaker-browser-default audio,
+    .et-db #et-boc .et-l .mdp-speaker-box.speaker-squared.speaker-browser-default audio {
+      outline: none; }
+
+/* WPBakery player fix */
+#ajax-content-wrap .mejs-container {
+  background-color: transparent !important; }
+
+/* Download box */
+.mdp-speaker-download-box {
+  padding-top: 0 !important;
+  margin-top: 10px !important;
+  font-size: 14px; }

@@ -1,0 +1,120 @@
+/*
+Author: XpeedStudio
+Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+*/
+@media (max-width: 320px) {
+  :root {
+    font-size: 13px; } }
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px; } }
+
+@media (max-width: 991px) {
+  :root {
+    font-size: 13px; }
+  .section-padding {
+    padding: 75px 0; }
+  .section-padding-medium {
+    padding: 60px 0; }
+  .section-padding-medium-bottom {
+    padding-bottom: 60px; }
+  .section-padding-medium-top {
+    padding-top: 60px; } }
+
+@media (min-width: 992px) {
+  .ekit-admin-right-content {
+    width: 70%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ekit-admin-right-content {
+    width: 100%;
+    padding: 0; }
+  .ekit-admin-support-section .ekit-admin-right-content,
+  .ekit-admin-feature-request-section .ekit-admin-right-content {
+    padding-left: 20px; }
+  #v-elementskit-userdata .ekit-admin-fields-container {
+    max-width: 75%; }
+  .ekit-admin-rate-now-section .ekit-admin-right-content {
+    padding-bottom: 20px; }
+  .ekit-admin-fields-container-description {
+    width: 100%; } }
+
+@media (max-width: 991px) {
+  .ekit-admin-fields-container-description {
+    width: 100%; }
+  .ekit-admin-right-content {
+    width: 100%;
+    padding: 0; }
+  .ekit-admin-support-section .ekit-admin-right-content,
+  .ekit-admin-feature-request-section .ekit-admin-right-content {
+    padding-left: 20px; }
+  #v-elementskit-userdata .ekit-admin-fields-container {
+    max-width: 75%; } }
+
+@media (max-width: 480px) {
+  .ekti-admin-video-tutorial-iframe iframe {
+    max-width: 300px;
+    height: auto; }
+  .ekit-admin-video-tutorial-list a h2 {
+    font-size: 16px; }
+  .ekit_accordion_card:not(:last-child) {
+    margin-bottom: 15px; }
+  .ekit_accordion_card .attr-btn {
+    padding: 16px;
+    font-size: 12px;
+    padding-left: 20px; }
+  .ekit-admin-right-content--link {
+    font-size: 12px;
+    padding: 10px 15px; }
+  .ekit-admin-right-content--heading h2 {
+    font-size: 20px; }
+  .ekit-admin-right-content--heading__sub-title {
+    font-size: 50px; }
+  .ekit-admin-right-content p {
+    font-size: 16px;
+    line-height: 25px; }
+  .ekit-admin-right-content--form input {
+    height: 50px;
+    padding: 0 25px; }
+  .ekit-admin-right-content--form button {
+    width: 45px;
+    height: 45px; }
+  .ekit-admin-section-heaer-title {
+    margin-bottom: 10px;
+    font-size: 14px; }
+  .ekit-admin-input-switch .ekit-admin-settings-form-submit {
+    font-size: 12px;
+    padding: 9px 18px; }
+  .ekit-admin-section-header {
+    font-size: 15px; }
+    .ekit-admin-section-header .ekit-admin-input-switch {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+  .ekit_accordion_card .attr-panel-body {
+    padding: 20px; }
+  .ekit-admin-fields-container-description {
+    font-size: 15px;
+    line-height: 22px; }
+  #v-elementskit-userdata .ekit-admin-fields-container {
+    max-width: 100%; }
+  #v-elementskit-userdata:before {
+    background-size: contain;
+    width: 100%;
+    height: 100%; }
+  .ekit-admin-section {
+    padding: 30px 0; }
+  .ekit-admin-video-tutorial-list {
+    display: block; }
+    .ekit-admin-video-tutorial-list .ekit-admin-video-tutorial-item {
+      margin-bottom: 15px; }
+      .ekit-admin-video-tutorial-list .ekit-admin-video-tutorial-item:last-child {
+        margin-bottom: 0; }
+  .ekit-admin-dual-layout {
+    display: block; }
+    .ekit-admin-dual-layout.ekit-admin-subscribed-section .ekit-admin-left-thumb, .ekit-admin-dual-layout.ekit-admin-rate-now-section .ekit-admin-left-thumb {
+      margin: 0;
+      margin-top: 50px; }
+    .ekit-admin-dual-layout .ekit-admin-left-thumb {
+      margin-bottom: 50px; } }

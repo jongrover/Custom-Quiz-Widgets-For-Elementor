@@ -1,0 +1,51 @@
+pre[class*="language-"] {
+    position: relative;
+    overflow: visible;
+    border-radius: 5px;
+    /*            overflow: scroll;*/
+}
+
+pre[class*="language-"] .copy {
+    content: "copy";
+    padding: 2px 10px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*transform: translate(-10px, 0%);*/
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+    /*background: #272822;*/
+    cursor: pointer;
+    display: none ;
+    transition: opacity 1s ease-out;
+    z-index: 0;
+}
+
+pre[class*="language-"]:hover .copy {
+    /*transform: translate(-10px, -95%);*/
+    display: block;
+    background: #272822;
+    transition: display 600ms; 
+    z-index: 1;
+    animation: pulse 3s infinite;
+}
+@keyframes pulse {
+    0% {
+        background-color: #001F3F;
+    }
+    100% {
+        background-color: #FF4136;
+    }
+}
+
+pre[class*="language-"]:hover .copy:hover {
+    color: gray;
+}
+
+.bdt-source-code pre {
+    max-height:  500px;
+    overflow: auto;
+}
+
+ 

@@ -1,0 +1,12 @@
+.ekit-breadcrumb {
+
+    color: red;
+}
+
+
+.ekit-breadcrumb > li {
+
+    float: left;
+    color: blue;
+    padding-right: 5px;
+}

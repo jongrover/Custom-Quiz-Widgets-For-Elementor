@@ -24,62 +24,46 @@ class Prev_Next_Buttons_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'No Controls', 'elementor' ),
+				'label' => __( 'Previous Next Button Controls', 'elementor' ),
 			]
 		);
 
+		$menus = wp_get_nav_menus();
+		$selectMenus = array();
+		foreach($menus as $menu) {
+			$menuId = $menu->term_id;
+			$menuName = $menu->name;
+			$selectMenus[$menuId] = $menuName;
+		}
+
+    $this->add_control(
+			'menu',
+			[
+				'label' => __( 'Menu', 'elementor' ),
+				'label_block' => true,
+				'type' => Controls_Manager::SELECT,
+				'default' => '',
+        'options' => $selectMenus,
+			]
+		);
+
+		// $activeMenu = $this->get_settings_for_display('menu');
+		// $menuItems = wp_get_nav_menu_items($activeMenu);
+		// $selectItems = array();
+		// foreach($menuItems as $item) {
+		// 	$itemId = $item->ID;
+		// 	$itemTitle = $item->title;
+		// 	$selectItems[$itemId] = $itemTitle;
+		// }
+		//
 		// $this->add_control(
-		// 	'question',
+		// 	'page',
 		// 	[
-		// 		'label' => __( 'Question', 'elementor' ),
-		// 		'label_block' => true,
-		// 		'type' => Controls_Manager::TEXT,
-		// 		'placeholder' => __( 'Enter a question here', 'elementor' ),
-		// 	]
-		// );
-    //
-    // $this->add_control(
-		// 	'a',
-		// 	[
-		// 		'label' => __( 'Answer A.', 'elementor' ),
-		// 		'label_block' => true,
-		// 		'type' => Controls_Manager::TEXT,
-		// 		'placeholder' => __( 'Enter answer A here', 'elementor' ),
-		// 	]
-		// );
-    //
-    // $this->add_control(
-		// 	'b',
-		// 	[
-		// 		'label' => __( 'Answer B.', 'elementor' ),
-		// 		'label_block' => true,
-		// 		'type' => Controls_Manager::TEXT,
-		// 		'placeholder' => __( 'Enter answer B here', 'elementor' ),
-		// 	]
-		// );
-    //
-    // $this->add_control(
-		// 	'c',
-		// 	[
-		// 		'label' => __( 'Answer C.', 'elementor' ),
-		// 		'label_block' => true,
-		// 		'type' => Controls_Manager::TEXT,
-		// 		'placeholder' => __( 'Enter answer C here', 'elementor' ),
-		// 	]
-		// );
-    //
-    // $this->add_control(
-		// 	'correct',
-		// 	[
-		// 		'label' => __( 'Correct Answer', 'elementor' ),
+		// 		'label' => __( 'Select Current Page', 'elementor' ),
 		// 		'label_block' => true,
 		// 		'type' => Controls_Manager::SELECT,
-		// 		'default' => 'a',
-    //     'options' => [
-    //       'a' => __( 'A', 'elementor'),
-    //       'b' => __( 'B', 'elementor'),
-    //       'c' => __( 'C', 'elementor'),
-    //     ],
+		// 		'default' => '',
+    //     'options' => $selectItems,
 		// 	]
 		// );
 
@@ -88,6 +72,8 @@ class Prev_Next_Buttons_Widget extends Widget_Base {
 
 	protected function render() {
     $settings = $this->get_settings_for_display();
+		// $menuItems = wp_get_nav_menu_items($settings['menu']);
+		// echo "<pre>".var_dump($menuItems)."</pre>";
     echo "<style>.prev-next-buttons-box{text-align:center}.prev-next-buttons-box a{width:120px;display:inline-block;text-align:center;margin:0;padding:10px;text-decoration:none;color:#000}.prev-next-buttons-box .prevButton{background:#26b7ee}.prev-next-buttons-box .nextButton{background:#1383e4}.prev-next-buttons-box a:hover{background:#ffcd3a}</style><div class='prev-next-buttons-box'><a class='prevButton' href='#'>Previous</a><a class='nextButton' href='#'>Next</a></div>";
   }
 

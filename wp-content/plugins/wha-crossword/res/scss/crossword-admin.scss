@@ -1,0 +1,56 @@
+$var1: #000000;
+$var2: #0085ba;
+$var3: #006799;
+$var4: #ffffff;
+
+.wha-crossword-row-admin .wha-crossword-item {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid $var1;
+}
+.wha-crossword-row-admin .wha-crossword-inner input {
+  width: 100%;
+}
+.wha-crossword-block {
+  width: calc(100% - 40px);
+}
+.wha-crossword-item {
+  display: flex;
+  align-items: center;
+}
+.wha-delete-crossword-item {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $var1;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+#wha-crossword-action-add {
+  text-align: right;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 5px;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: $var2;
+    border-color: #0073aa $var3 #006799;
+    box-shadow: 0 1px 0 $var3;
+    color: $var4;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px $var3, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+  }
+}

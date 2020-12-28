@@ -1,0 +1,221 @@
+/**
+ * Create an audio version of your posts, with a selection of more than 235+ voices across more than 40 languages and variants.
+ * Exclusively on Envato Market: https://1.envato.market/speaker
+ *
+ * @encoding        UTF-8
+ * @version         3.1.0
+ * @copyright       Copyright (C) 2018 - 2020 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Alexander Khmelnitskiy (info@alexander.khmelnitskiy.ua), Dmitry Merkulov (dmitry@merkulov.design)
+ * @support         help@merkulov.design
+ **/
+
+$table-border: 1px solid rgba(2,116,230,.25)
+
+// Voice now used
+.mdp-now-used
+  background-color: #f1f3f4
+  display: flex
+  width: 100%
+  align-items: stretch
+  border-radius: 8px
+  margin-bottom: 20px !important
+
+  div
+    display: flex
+    align-items: center
+    width: 75%
+
+    &:first-of-type
+      background: #23282d
+      border-radius: 8px 0 0 8px
+      padding: 0 1.25rem
+      width: 25%
+
+  audio
+    width: 100%
+
+    &:focus
+      outline: none
+
+  strong
+    color: white
+    font-family: "Roboto", sans-serif
+    font-weight: 500
+
+// Voice choice table
+#mdp-speaker-settings-language-tbl
+  border-collapse: separate
+  border-spacing: 0 12px
+  width: 100% !important
+  clear: both
+  max-width: none !important
+  font-family: "Roboto", sans-serif
+
+  tbody
+    border: none
+
+    tr
+      border-radius: 8px
+      background: white
+
+      td
+        border-top: $table-border
+        border-bottom: $table-border
+
+        &:first-of-type
+          border-radius: 8px 0 0 8px
+          border-left: $table-border
+
+        &:last-of-type
+          border-radius: 0 8px 8px 0
+          border-right: $table-border
+
+        span
+          background: white
+          border-radius: 4px
+          padding: 4px 6px
+          font-size: 11px
+          border: 1px solid #ccc
+          white-space: nowrap
+          font-weight: 500
+          letter-spacing: .01rem
+          display: inline-block
+
+          img
+            margin-right: 4px
+            width: 10px
+            height: 10px
+            vertical-align: middle
+            margin-top: -2px
+
+        &.mdp-voice-name
+          white-space: nowrap
+
+      &:hover
+        box-shadow: 0 0 8px 0 rgba(2,116,230,.08)
+        transition: .4s
+        background: rgba(2,116,230,.08)
+
+        td
+          border-color: rgba(2,116,230,.12)
+
+    tr.selected
+      background-color: #0253ee
+      color: white
+
+      span
+        background: rgba(10,33,56,.6)
+        border-color: rgba(10,33,56,.6)
+
+  thead
+
+    background-color: rgba(0, 0, 0, .04)
+    border-radius: 8px
+
+    th
+      padding: 10px 14px
+      width: auto !important
+
+      &:first-of-type
+        border-radius: 8px 0 0 8px
+
+      &:last-of-type
+        border-radius: 0 8px 8px 0
+
+      &:focus
+        outline: none
+
+#mdp-speaker-settings-language-select
+  min-width: 300px
+  min-height: 56px
+  background: white url(../../images/input-placeholder.gif) left top no-repeat
+  display: block
+
+  .mdc-select
+    background: white
+
+    .mdc-floating-label
+      padding: 0 5px
+      margin-left: -5px
+
+table.display thead > tr > th.sorting_asc,
+table.display thead > tr > th.sorting_desc,
+table.display thead > tr > th.sorting,
+table.display thead > tr > td.sorting_asc,
+table.display thead > tr > td.sorting_desc,
+table.display thead > tr > td.sorting
+  padding-right: 30px
+
+.dataTables_wrapper .dataTables_length
+  margin-bottom: 10px
+
+table.dataTable tbody
+
+  td:first-of-type,
+  th:first-of-type
+    font-weight: 500
+    padding-left: 1.5rem
+
+table.dataTable tfoot td,
+table.dataTable tfoot th
+  padding: 10px 8px
+
+#mdp-speaker-settings-language-tbl_length,
+#mdp-speaker-settings-language-tbl_paginate
+  display: none
+
+#mdp-speaker-settings-language-tbl_wrapper
+  position: relative
+
+  #mdp-speaker-settings-language-tbl_filter
+    display: none
+
+  thead
+    width: 100%
+
+    tr
+      width: 100%
+
+    th
+      font-size: 12px
+      font-weight: 500
+
+  tbody
+    width: 100%
+
+    *
+      cursor: pointer
+
+  .dataTables_length
+    position: absolute
+    bottom: 0
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 782px)
+
+  #mdp-speaker-settings-language-tbl
+
+    tbody
+
+      tr
+
+        td
+          border-top: none
+          border-bottom: none
+          border-left: $table-border
+          border-right: $table-border
+          padding: 0 10px
+
+          &:first-of-type
+            border-top: $table-border
+            border-radius: 8px 8px 0 0
+            padding: 10px 10px 4px 10px !important
+
+          &:last-of-type
+            border-bottom: $table-border
+            border-radius: 0 0 8px 8px
+            padding: 0 10px 10px 10px
+

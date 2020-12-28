@@ -1,0 +1,101 @@
+/**
+ * Create an audio version of your posts, with a selection of more than 235+ voices across more than 40 languages and variants.
+ * Exclusively on Envato Market: https://1.envato.market/speaker
+ *
+ * @encoding        UTF-8
+ * @version         3.1.0
+ * @copyright       Copyright (C) 2018 - 2020 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Alexander Khmelnitskiy (info@alexander.khmelnitskiy.ua), Dmitry Merkulov (dmitry@merkulov.design)
+ * @support         help@merkulov.design
+ **/
+
+/**
+ * Tab: Post Types
+ **/
+.mdp-tab-name-post_types
+
+  // Chosen for custom post types
+  .chosen-container
+
+    ul
+
+      &:not(.chosen-results)
+        border-radius: 8px
+        border: 1px solid #d3d7db
+
+      &.chosen-results
+        padding: 10px
+
+        li
+          border-radius: 4px
+          font-size: 14px
+
+          &:not(.result-selected):hover,
+          &.highlighted
+            background: #e1effc
+            color: #0274e6
+
+  .chosen-container-multi
+
+    .chosen-choices
+      padding: 8px 12px
+
+  .chosen-container-multi
+
+    .chosen-choices
+      flex-wrap: wrap
+
+      li.search-choice
+        color: #0274e6
+        background: #e1effc
+        font-size: 14px
+        flex-direction: row-reverse
+        border-radius: 5px
+        box-shadow: none
+
+        a
+          width: 0
+          transition: .4s
+
+        &:hover
+          background: #ff495c
+          color: white
+
+        span
+          padding-right: 2px
+          white-space: nowrap
+
+        .search-choice-close
+          margin-top: 1px
+
+        &:hover
+
+          a
+            width: 14px
+            transition: .4s
+
+  .mdc-data-table
+    overflow: visible
+    width: 100%
+
+    th
+      font-weight: bold
+      padding-top: 20px
+
+    .mdc-data-table__cell,
+    .mdc-data-table__header-cell
+      padding-right: 16px
+      padding-left: 16px
+
+    .mdp-post-type
+      span span
+        font-size: .75rem
+        color: rgba(10,33,56,.6)
+
+  .mdc-select .mdc-floating-label
+    background: transparent
+
+  #mdp-custom-posts-tbl
+    .mdc-data-table__cell
+      overflow: visible

@@ -1,0 +1,226 @@
+.crossword_options_page h2 {
+    font-size: 18px;
+    margin: 25px 5px 10px 5px;
+}
+.wha-crossword-row-admin_single_options h2,
+.editor_individual_wrap h2 {
+    font-size: 18px !important;
+    padding: 10px 0 5px 0 !important;
+    font-weight: 500 !important;
+}
+
+.wha-crossword-row-admin .wha-crossword-item {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #bfb8b8;
+    border-radius:10px;
+}
+.wha-crossword-row-admin .wha-crossword-item .wha-crossword-inner label {
+    font-weight: bold;
+}
+
+.wha-crossword-row-admin .wha-crossword-item .wha-crossword-inner input {
+    box-shadow: none;
+    height: 35px;
+    font-size: 16px;
+}
+
+.wha-crossword-row-admin .wha-crossword-inner input {
+    width: 100%;
+}
+
+.wha-crossword-block {
+    width: calc(100% - 40px);
+}
+
+.wha-crossword-item {
+    display: flex;
+    align-items: center;
+}
+
+.wha-crossword-item a {
+    color: #bfb8b8;
+}
+
+.wha-crossword-item a:hover {
+    color: #0f121f;
+}
+
+.wha-delete-crossword-item {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #bfb8b8;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#wha-crossword-action-add {
+    text-align: right;
+}
+
+#wha-crossword-action-add a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 5px;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
+
+.setting_wrapper {
+    padding: 20px;
+    background: white;
+}
+
+input.jscolor {
+    border-radius: 20px;
+}
+
+.radio_btn {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.adm_divider {
+    margin: 18px 0 10px;
+}
+#whacs_sidebar{
+    margin-bottom: 20px;
+}
+
+#whacs_sidebar .handlediv,
+#whacs_sidebar .hndle.ui-sortable-handle,
+#whacs_sidebar.postbox {
+    display: none;
+}
+
+#whacs_sidebar .inside {
+    background: white;
+    border: 1px solid #41b4f7;
+    padding: 25px 15px;
+}
+
+
+#whacs_sidebar .inside h1,
+#whacs_sidebar .inside h2,
+#whacs_sidebar .inside h3,
+#whacs_sidebar .inside h4,
+#whacs_sidebar .inside h5 {
+    padding: 0 !important;
+}
+
+#whacs_sidebar .inside h4 {
+    margin: 10px 0;
+}
+
+#whacs_sidebar .inside h1 {
+    font-size: 19px;
+    color: #41b4f7;
+    font-weight: bold;
+    text-align: center;
+}
+
+#whacs_sidebar .whacs_sidebar_list li {
+    margin: 0;
+}
+
+#whacs_sidebar .whacs_sidebar_list {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 0;
+}
+
+.wha {
+    color: #41b4f7;
+}
+
+#whacs_sidebar .whacs_logo_wrap {
+    text-align: center;
+    padding: 15px;
+}
+
+#whacs_sidebar .whacs_logo_wrap img {
+    width: 100%;
+    max-width: 100px;
+}
+
+/* Button Animation */
+
+#whacs_sidebar .btn {
+    background: #41b4f7;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 21px;
+    border: 2px solid #41b4f7;
+    transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#whacs_sidebar .btn-border {
+    background-color: transparent;
+    color: #1d1d1d;
+}
+
+#whacs_sidebar .btn-arrow {
+    position: relative;
+    transition: background-color 300ms ease-out;
+}
+
+#whacs_sidebar .btn-arrow span {
+    display: inline-block;
+    position: relative;
+    transition: all 300ms ease-out;
+    will-change: transform;
+}
+
+
+#whacs_sidebar .btn-arrow:hover span {
+    transform: translate3d(-1rem, 0, 0);
+}
+
+#whacs_sidebar .btn-arrow svg {
+    position: absolute;
+    width: 1.3em;
+    right: 0;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease-out;
+    will-change: right, opacity;
+}
+
+#whacs_sidebar .btn-arrow:hover svg,
+#whacs_sidebar .btn:hover svg {
+    opacity: 1;
+    right: -2rem;
+
+}

@@ -1,0 +1,137 @@
+$var1: #b3ffb4;
+$var2: #ff372c;
+$var3: #202020;
+
+.wha-crossword-row {
+  height: 100%;
+  min-width: 400px;
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wha-square.wha-letter.wha-first {
+  position: relative;
+  div.wha-counter {
+    content: '1';
+    z-index: 10;
+    position: absolute;
+    font-size: 15px;
+    line-height: 1em;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    text-align: right;
+  }
+}
+input.wha-word {
+  display: none;
+}
+.wha-square.wha-letter.wha-correct {
+  background-color: $var1;
+
+  &.wha-char {
+    background-color: none;
+  }
+}
+.wha-square.wha-letter.wha-error {
+  border: 1px solid $var2;
+  &.wha-char {
+    background-color: none;
+  }
+}
+.wha-crossword-container {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  .wha-word, .wha-clue {
+    display: inline-block;
+    height: 1.5em;
+    padding: 0 5px;
+  }
+  .wha-word {
+    text-align: right;
+    width: 100px;
+  }
+}
+.wha-square {
+  border: 1px solid transparent;
+  &.wha-letter {
+    //border-color: $var3;
+  }
+}
+.wha-center {
+  margin: 0 auto;
+}
+.wha-line {
+  height: 2em;
+}
+.wha-crossword {
+  display: block;
+}
+.wha-square {
+  margin: 0 1px 1px 0;
+  display: inline-block;
+  font: 24px Calibri;
+  width: 1.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wha-letter {
+  background-color: rgb(255,255,255);
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.wha-char:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(255,32,32,1);
+  -moz-box-shadow: 0 0 0 2px rgba(255,32,32,1);
+  box-shadow: inset 0 0 0 2px rgba(255,32,32,1);
+}
+#wha-crossword input.wha-char {
+  z-index: 9;
+  position: relative;
+  background-color: transparent;
+  font-size: 24px;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: -1px 0 0 -1px;
+  width: 1.35em;
+  height: 1.35em;
+  text-align: center;
+  background: none;
+}
+.wha-hide {
+  visibility: hidden;
+}
+.wha-clueReadOnly {
+  border: 0 ;
+  outline: 0;
+}
+@media screen and (max-width: 767px) {
+  font-size: 18px;
+}
+#wha-crossword input.wha-char {
+  font-size: 18px;
+}
+.wha-clue {
+  width: 300px;
+}

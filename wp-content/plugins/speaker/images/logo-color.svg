@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#0253EE;}
+</style>
+<path id="Polygon_3" class="st0" d="M180,0h152c99.4,0,180,80.6,180,180v152c0,99.4-80.6,180-180,180H180C80.6,512,0,431.4,0,332
+	V180C0,80.6,80.6,0,180,0z M313,354.2C199.6,419.7,142.9,387,142.9,256S199.6,92.3,313,157.8S426.4,288.8,313,354.2z"/>
+</svg>

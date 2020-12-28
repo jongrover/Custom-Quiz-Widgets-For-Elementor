@@ -1,0 +1,214 @@
+/**
+ * Create an audio version of your posts, with a selection of more than 235+ voices across more than 40 languages and variants.
+ * Exclusively on Envato Market: https://1.envato.market/speaker
+ *
+ * @encoding        UTF-8
+ * @version         3.1.0
+ * @copyright       Copyright (C) 2018 - 2020 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Alexander Khmelnitskiy (info@alexander.khmelnitskiy.ua), Dmitry Merkulov (dmitry@merkulov.design)
+ * @support         help@merkulov.design
+ **/
+
+/**
+ * Top Fixed.
+ * ===================================================================== */
+body:not(.wp-admin)
+
+    .mdp-speaker-box.top-fixed
+        position: fixed
+        top: 0
+        left: 0
+        margin: 0 !important
+        max-width: 100% !important
+        width: 100%
+        z-index: 999999
+
+        .wp-audio-shortcode
+            max-width: 100% !important
+
+
+/**
+ * Bottom Fixed.
+ * ===================================================================== */
+body:not(.wp-admin)
+
+    .mdp-speaker-box.bottom-fixed,
+    .et-db #et-boc .et-l .mdp-speaker-box.bottom-fixed
+        position: fixed
+        bottom: 0
+        left: 0
+        margin: 0 !important
+        max-width: 100% !important
+        width: 100%
+        z-index: 999999
+
+        .wp-audio-shortcode
+            max-width: 100% !important
+
+
+/**
+ * Player Styles
+ * ===================================================================== */
+.mdp-speaker-box,
+.et-db #et-boc .et-l .mdp-speaker-box
+
+    &.speaker-round
+
+        border-radius: 10rem
+        height: 54px
+
+        &:hover
+            box-shadow: 0 0 10px #cccccc
+            transition: 1s
+
+
+        .mejs-container,
+        .mejs-embed,
+        .mejs-embed body
+            background: inherit
+            border-radius: 10rem
+            height: 54px
+            box-shadow: none
+
+
+        .mejs-controls
+            background: inherit
+            top: 7px
+            padding: 0 12px
+
+            .mejs-time-rail,
+            .mejs-horizontal-volume-slider
+
+                *
+                    border-radius: 10rem
+
+
+            .mejs-time-loaded
+                opacity: .25
+
+
+            .mejs-time-current
+                background: white
+
+
+        audio
+            display: none
+
+
+        *
+            outline: none
+
+
+    &.speaker-rounded
+
+        border-radius: .5rem
+        height: 54px
+
+        &:hover
+            box-shadow: 0 0 10px #cccccc
+            transition: 1s
+
+
+        .mejs-container,
+        .mejs-embed,
+        .mejs-embed body
+            background: inherit
+            border-radius: .5rem
+            height: 54px
+
+
+        .mejs-controls
+            background: inherit
+            top: 7px
+            padding: 0 12px
+
+            .mejs-time-rail,
+            .mejs-horizontal-volume-slider
+
+                *
+                    border-radius: .125rem
+
+
+            .mejs-time-loaded
+                opacity: .25
+
+
+            .mejs-time-current
+                background: white
+
+
+        audio
+            display: none
+
+
+        *
+            outline: none
+
+
+    &.speaker-squared
+
+        border-radius: 0
+        height: 54px
+
+        &:hover
+            box-shadow: 0 0 10px #cccccc
+            transition: 1s
+
+
+        .mejs-container,
+        .mejs-embed,
+        .mejs-embed body
+            background: inherit
+            border-radius: 0
+            height: 54px
+
+
+        .mejs-controls
+            background: inherit
+            top: 7px
+            padding: 0 12px
+
+            .mejs-time-loaded
+                opacity: .25
+
+
+            .mejs-time-current
+                background: white
+
+
+        audio
+            display: none
+
+
+        *
+            outline: none
+
+
+        &.speaker-wp-default
+
+            background: transparent !important
+
+            audio
+                outline: none
+
+
+        &.speaker-browser-default
+
+            background: transparent !important
+
+            audio
+                outline: none
+
+
+/* WPBakery player fix */
+#ajax-content-wrap
+
+    .mejs-container
+        background-color: transparent !important
+
+/* Download box */
+.mdp-speaker-download-box
+    padding-top: 0 !important
+    margin-top: 10px !important
+    font-size: 14px

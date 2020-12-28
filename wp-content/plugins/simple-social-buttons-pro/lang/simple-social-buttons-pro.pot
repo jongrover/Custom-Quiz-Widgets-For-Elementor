@@ -1,0 +1,289 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Simple Social Buttons Pro\n"
+"POT-Creation-Date: 2019-11-09 11:06+0500\n"
+"PO-Revision-Date: 2017-10-28 11:25+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: simple-social-buttons-pro.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: classes/ssb-pro.php:159
+msgid ""
+"Activate your license to get automatic plugin updates and premium support."
+msgstr ""
+
+#: classes/ssb-pro.php:160
+msgid "License Manager"
+msgstr ""
+
+#: classes/ssb-pro.php:382 classes/ssb-pro.php:442 classes/ssb-pro.php:582
+#: classes/ssb-pro.php:716 classes/ssb-pro.php:834
+msgid "Use Custom Colors"
+msgstr ""
+
+#: classes/ssb-pro.php:390 classes/ssb-pro.php:449 classes/ssb-pro.php:588
+#: classes/ssb-pro.php:722 classes/ssb-pro.php:840
+msgid "Background Color"
+msgstr ""
+
+#: classes/ssb-pro.php:397 classes/ssb-pro.php:456 classes/ssb-pro.php:594
+#: classes/ssb-pro.php:728 classes/ssb-pro.php:846
+msgid "Hover Background Color"
+msgstr ""
+
+#: classes/ssb-pro.php:404 classes/ssb-pro.php:463 classes/ssb-pro.php:600
+#: classes/ssb-pro.php:734 classes/ssb-pro.php:852
+msgid "Icon Color"
+msgstr ""
+
+#: classes/ssb-pro.php:411 classes/ssb-pro.php:470 classes/ssb-pro.php:606
+#: classes/ssb-pro.php:740 classes/ssb-pro.php:858
+msgid "Hover Icon Color"
+msgstr ""
+
+#: classes/ssb-pro.php:517
+msgid "On Media"
+msgstr ""
+
+#: classes/ssb-pro.php:522
+msgid "Popup"
+msgstr ""
+
+#: classes/ssb-pro.php:527
+msgid "Fly In"
+msgstr ""
+
+#: classes/ssb-pro.php:550 classes/ssb-pro.php:771
+msgid "Position"
+msgstr ""
+
+#: classes/ssb-pro.php:551
+msgid "<h4>Display Settings</h4>"
+msgstr ""
+
+#: classes/ssb-pro.php:565 classes/ssb-pro.php:699 classes/ssb-pro.php:806
+msgid "Add Icon Spacing"
+msgstr ""
+
+#: classes/ssb-pro.php:577 classes/ssb-pro.php:711 classes/ssb-pro.php:829
+msgid "Hide On Mobile Devices"
+msgstr ""
+
+#: classes/ssb-pro.php:612
+msgid "Media Share Description"
+msgstr ""
+
+#: classes/ssb-pro.php:622 classes/ssb-pro.php:746 classes/ssb-pro.php:864
+msgid "Post type Settings"
+msgstr ""
+
+#: classes/ssb-pro.php:623 classes/ssb-pro.php:747 classes/ssb-pro.php:865
+msgid "Multi checkbox description"
+msgstr ""
+
+#: classes/ssb-pro.php:635 classes/ssb-pro.php:759
+msgid "<h4>Display Settings</h4>\t"
+msgstr ""
+
+#: classes/ssb-pro.php:642 classes/ssb-pro.php:766
+msgid "Message"
+msgstr ""
+
+#: classes/ssb-pro.php:647 classes/ssb-pro.php:818
+msgid "Icon Alignment"
+msgstr ""
+
+#: classes/ssb-pro.php:658 classes/ssb-pro.php:781
+msgid "Animation"
+msgstr ""
+
+#: classes/ssb-pro.php:672
+msgid "Trigger Before Leaving"
+msgstr ""
+
+#: classes/ssb-pro.php:677
+msgid "Trigger After Scrolling"
+msgstr ""
+
+#: classes/ssb-pro.php:688 classes/ssb-pro.php:795
+msgid "Display Share Counts"
+msgstr ""
+
+#: classes/ssb-pro.php:690 classes/ssb-pro.php:797
+msgid ""
+"<p id=\"share-count-message\" > For Facebook share count you need to add "
+"Facebook App id and secret in Advance settings tab. <br> Also For Twitter "
+"share count you need to connect your site with <a href=\"https://www."
+"twitcount.com\" target=\"_blank\">twitcount.com</a> </p>"
+msgstr ""
+
+#: classes/ssb-pro.php:694 classes/ssb-pro.php:801
+msgid "Display Total Shares"
+msgstr ""
+
+#: classes/ssb-pro.php:1004 classes/ssb-pro.php:1102
+msgid ""
+"If this error keeps displaying, please contact our support at wpbrigade.com!"
+msgstr ""
+
+#: classes/ssb-pro.php:1011 classes/ssb-pro.php:1053 classes/ssb-pro.php:1109
+#: classes/ssb-pro.php:1151
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: classes/ssb-pro.php:1011 classes/ssb-pro.php:1109
+msgid ""
+"An error occurred, please try again. If this error keeps displaying, please "
+"contact our support at wpbrigade.com!"
+msgstr ""
+
+#: classes/ssb-pro.php:1026 classes/ssb-pro.php:1124
+#, php-format
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: classes/ssb-pro.php:1032 classes/ssb-pro.php:1130 classes/ssb-pro.php:1282
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: classes/ssb-pro.php:1036 classes/ssb-pro.php:1134
+msgid "Your license key is Invalid."
+msgstr ""
+
+#: classes/ssb-pro.php:1041 classes/ssb-pro.php:1139
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: classes/ssb-pro.php:1045 classes/ssb-pro.php:1143
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: classes/ssb-pro.php:1049 classes/ssb-pro.php:1147
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: classes/ssb-pro.php:1275
+#, php-format
+msgid ""
+"Your license key has been deactivated on %s. Please Activate your license "
+"key to continue using Automatic Updates and Premium Support."
+msgstr ""
+
+#: inc/SSB_PRO_SL_Plugin_Updater.php:208
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: inc/SSB_PRO_SL_Plugin_Updater.php:216
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: inc/SSB_PRO_SL_Plugin_Updater.php:406
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: inc/SSB_PRO_SL_Plugin_Updater.php:406
+msgid "Error"
+msgstr ""
+
+#: inc/license-manager.php:6
+msgid "Activate your License"
+msgstr ""
+
+#: inc/license-manager.php:15
+msgid "License Key"
+msgstr ""
+
+#: inc/license-manager.php:19
+msgid ""
+"Validating license key is mandatory to use automatic updates and plugin "
+"support."
+msgstr ""
+
+#: inc/license-manager.php:30
+msgid "Deactivate License"
+msgstr ""
+
+#: inc/license-manager.php:33
+msgid "Activate License"
+msgstr ""
+
+#: inc/license-manager.php:43
+msgid "You have a lifetime license, it will never expire."
+msgstr ""
+
+#: inc/license-manager.php:47
+#, php-format
+msgid "Your license key is valid until %s."
+msgstr ""
+
+#: inc/license-manager.php:53
+#, php-format
+msgid ""
+"The license will automatically renew, if you have an active subscription to "
+"the Simple Social Buttons - at %s"
+msgstr ""
+
+#: inc/license-manager.php:59
+#, php-format
+msgid ""
+"Your license key expired on %s. Please input a valid non-expired license "
+"key. If you think, that this license has not yet expired (was renewed "
+"already), then please save the settings, so that the license will verify "
+"again and get the up-to-date expiration date."
+msgstr ""
+
+#: simple-social-buttons-pro.php:69
+msgid "The following required plugin is not installed &mdash; "
+msgstr ""
+
+#: simple-social-buttons-pro.php:71
+msgid "Install Simple Social Buttons Core (Free) now"
+msgstr ""
+
+#: simple-social-buttons-pro.php:83
+msgid ""
+"Please activate Simple Social Buttons Core (Free) to use \"Pro\" add-on."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Simple Social Buttons Pro"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpbrigade.com/wordpress/plugins/simple-social-buttons-pro/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This is the Simple Social Buttons Pro version and it adds premium "
+"functionality on the top of core version. Please install both to use the "
+"<code>COMPLETE</code> features of <code>Simple Social Buttons</code>"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WPBrigade"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.WPBrigade.com/"
+msgstr ""

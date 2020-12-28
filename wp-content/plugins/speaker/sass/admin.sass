@@ -1,0 +1,85 @@
+/**
+ * Create an audio version of your posts, with a selection of more than 235+ voices across more than 40 languages and variants.
+ * Exclusively on Envato Market: https://1.envato.market/speaker
+ *
+ * @encoding        UTF-8
+ * @version         3.1.0
+ * @copyright       Copyright (C) 2018 - 2020 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Alexander Khmelnitskiy (info@alexander.khmelnitskiy.ua), Dmitry Merkulov (dmitry@merkulov.design)
+ * @support         help@merkulov.design
+ **/
+
+/** Language Table. */
+@import "includes/language-table"
+
+/** Tab: Voice. */
+@import "includes/tab-voice"
+
+/** Tab: Post Types. */
+@import "includes/tab-post-types"
+
+/** Tab: Activation. */
+@import "includes/tab-activation"
+
+/** Tab: Updates. */
+@import "includes/tab-updates"
+
+/** General Styles. */
+.mdp-speaker-helper-padding
+  padding-bottom: 14px
+
+.mdp-alert-error
+  background: #fff1f0
+  color: #d85030
+  border: 1px solid rgba(216, 80, 48, .3)
+  padding: 10px
+  border-radius: 4px
+  text-shadow: 0 1px 0 #fff
+
+.mdp-plugin-version
+  font-size: 0.8rem
+  padding-left: 20px
+
+.mdp-activation-status
+
+  &.activated
+
+    i
+      color: #0BDF6A
+
+  &.not-activated
+    color: #ff495c
+
+    i
+      color: #ff495c
+
+.mdp-activation
+
+  .mdp-info-box
+    border: 1px solid #b9b9b9
+    padding: 20px
+    box-sizing: border-box
+    width: 100%
+    max-width: 300px
+    margin-top: 10px
+    border-radius: 8px
+
+  .mdp-title
+    font-weight: bold
+    line-height: 2
+    font-size: 16px
+
+.mdp-speaker-server .mdc-system-requirements-table .mdc-system-value
+  display: inline-block
+
+/** Spin animation for icon buttons. */
+.mdp-spin
+  .material-icons
+    animation: mdp-rotate 2s infinite linear
+
+@keyframes mdp-rotate
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(359deg)

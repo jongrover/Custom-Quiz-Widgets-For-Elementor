@@ -1,0 +1,6 @@
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <rect id="Rectangle" fill="#34A853" x="0" y="2.5" width="2" height="5" rx="1"/>
+    <rect id="Rectangle" fill="#4285F4" x="2.66666667" y="0" width="2" height="10" rx="1"/>
+    <rect id="Rectangle" fill="#EA4334" x="5.33333333" y="1.5625" width="2" height="6.875" rx="1"/>
+    <rect id="Rectangle" fill="#FBBC03" x="8" y="3.125" width="2" height="3.75" rx="1"/>
+</svg>

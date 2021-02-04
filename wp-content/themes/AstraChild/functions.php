@@ -34,7 +34,9 @@ if ( ! function_exists( 'AstraChild_enqueue_child_scripts' ) ) {
 		wp_enqueue_script('lef-recorder', get_stylesheet_directory_uri() . '/js/recorder.js', 'jquery', null, true );
 		wp_enqueue_script('lef-rec-playback', get_stylesheet_directory_uri() . '/js/rec-playback.js', 'jquery', null, true );
 		wp_enqueue_script('lef-prev-next-buttons', get_stylesheet_directory_uri() . '/js/prev-next-buttons.js', 'jquery', null, true );
-		wp_enqueue_script('audio-playback', get_stylesheet_directory_uri() . '/js/audio-playback.js', 'jquery', null, true );
+		wp_enqueue_script('lef-audio-playback', get_stylesheet_directory_uri() . '/js/audio-playback.js', 'jquery', null, true );
+		wp_enqueue_script('lef-audio-playback-simple', get_stylesheet_directory_uri() . '/js/audio-playback-simple.js', 'jquery', null, true );
+		wp_enqueue_script('lef-audio-playback-simple-2', get_stylesheet_directory_uri() . '/js/audio-playback-simple-2.js', 'jquery', null, true );
 	}
 }
 

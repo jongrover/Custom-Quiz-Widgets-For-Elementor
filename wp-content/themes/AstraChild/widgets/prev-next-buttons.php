@@ -12,7 +12,7 @@ class Prev_Next_Buttons_Widget extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'fa fa-question-circle';
+		return 'fa fa-arrow-circle-right';
 	}
 
 	public function get_categories() {

@@ -74,7 +74,7 @@ class Prev_Next_Buttons_Widget extends Widget_Base {
     $settings = $this->get_settings_for_display();
 		// $menuItems = wp_get_nav_menu_items($settings['menu']);
 		// echo "<pre>".var_dump($menuItems)."</pre>";
-    echo "<style>.prev-next-buttons-box{text-align:center}.prev-next-buttons-box a{width:120px;display:inline-block;text-align:center;margin:0;padding:10px;text-decoration:none;color:#000}.prev-next-buttons-box .prevButton{background:#26b7ee}.prev-next-buttons-box .nextButton{background:#1383e4}.prev-next-buttons-box a:hover{background:#ffcd3a}</style><div class='prev-next-buttons-box'><a class='prevButton' href='#'>Previous</a><a class='nextButton' href='#'>Next</a></div>";
+    echo "<div class='prev-next-buttons-box'><a class='prevButton' href='#'>Previous</a><a class='nextButton' href='#'>Next</a></div>";
   }
 
 	protected function _content_template() {

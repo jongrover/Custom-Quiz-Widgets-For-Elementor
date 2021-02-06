@@ -42,3 +42,9 @@ if ( ! function_exists( 'AstraChild_enqueue_child_scripts' ) ) {
 }
 
 add_action( 'wp_enqueue_scripts', 'AstraChild_enqueue_child_scripts' );
+
+function AstraChild_enqueue_widget_styles() {
+	wp_enqueue_style( 'widget-style', get_stylesheet_directory_uri() . '/css/widget-style.css',false,'1.1','all');
+}
+
+add_action( 'wp_enqueue_scripts', 'AstraChild_enqueue_widget_styles' );

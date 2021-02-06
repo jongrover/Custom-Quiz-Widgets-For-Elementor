@@ -8,7 +8,7 @@ class Audio_Playback_Simple_2_Widget extends Widget_Base {
 	}
 
 	public function get_title() {
-		return 'Audio Playback Simple 2';
+		return 'Audio Playback/Stop Simple';
 	}
 
 	public function get_icon() {

@@ -21,6 +21,7 @@ class My_Elementor_Widgets {
 		require_once('widgets/audio-playback.php');
 		require_once('widgets/audio-playback-simple.php');
 		require_once('widgets/audio-playback-simple-2.php');
+		require_once('widgets/audio-playback-simple-3.php');
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	}
 
@@ -33,6 +34,7 @@ class My_Elementor_Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Audio_Playback_Widget() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Audio_Playback_Simple_Widget() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Audio_Playback_Simple_2_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Audio_Playback_Simple_3_Widget() );
 	}
 
 }

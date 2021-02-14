@@ -68,6 +68,16 @@ class Question_Radio_Menu_Widget extends Widget_Base {
 			]
 		);
 
+		$this->add_control(
+			'd',
+			[
+				'label' => __( 'Answer D.', 'elementor' ),
+				'label_block' => true,
+				'type' => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter answer D here', 'elementor' ),
+			]
+		);
+
     $this->add_control(
 			'correct',
 			[
@@ -79,6 +89,7 @@ class Question_Radio_Menu_Widget extends Widget_Base {
           'a' => __( 'A', 'elementor'),
           'b' => __( 'B', 'elementor'),
           'c' => __( 'C', 'elementor'),
+					'd' => __( 'D', 'elementor'),
         ],
 			]
 		);
@@ -93,6 +104,7 @@ class Question_Radio_Menu_Widget extends Widget_Base {
 						  <input type='radio' name='answer-radio' value='a'> $settings[a]<br>
 						  <input type='radio' name='answer-radio' value='b'> $settings[b]<br>
 						  <input type='radio' name='answer-radio' value='c'> $settings[c]<br>
+							<input type='radio' name='answer-radio' value='d'> $settings[d]
 						</form>
 						<span class='response' style='display:inline-block;margin:0px 0px 0px 5px;'></span>
           </div>";

@@ -48,3 +48,18 @@ function AstraChild_enqueue_widget_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'AstraChild_enqueue_widget_styles' );
+
+// Social Icons Widget in the Header see /template-parts/header/social-widget-area.php
+
+function AstraChild_social_widget_area_init() {
+  register_sidebar( array(
+    'name'          => __( 'Social Icons Header', 'childe2-style' ),
+    'id'            => 'social-icons-widget',
+    'description'   => __( 'Add widgets here to appear in the header at top right above the primary navigation.', 'AstraChild' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ) );
+}
+add_action( 'widgets_init', 'AstraChild_social_widget_area_init' );

@@ -11,3 +11,30 @@ Text Domain:  AstraChild
 */
 
 /* Write here your own personal stylesheet */
+
+.relative-header {
+  position: relative;
+}
+
+.social-icons-widget {
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 35px;
+  line-height: 0;
+  text-align: right;
+}
+
+.social-icons-widget a {
+  padding: 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .relative-header {
+    position: static;
+  }
+  .widget-area.social-icons-widget {
+    display: none;
+  }
+}

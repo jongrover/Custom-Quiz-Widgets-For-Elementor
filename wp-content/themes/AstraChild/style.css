@@ -10,7 +10,7 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  AstraChild
 */
 
-/* Write here your own personal stylesheet */
+/* Social Icons Widget Located in Header */
 
 .relative-header {
   position: relative;
@@ -24,6 +24,7 @@ Text Domain:  AstraChild
   right: 35px;
   line-height: 0;
   text-align: right;
+  font-size: 1.4em;
 }
 
 .social-icons-widget a {
@@ -34,7 +35,33 @@ Text Domain:  AstraChild
   .relative-header {
     position: static;
   }
-  .widget-area.social-icons-widget {
+  .widget-area.social-icons-widget .twitter, .widget-area.social-icons-widget .podcast {
     display: none;
+  }
+  .social-icons-widget {
+    top: 125px;
+    right: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em;
+  }
+  .widget-area.social-icons-widget .facebook, .widget-area.social-icons-widget .instagram, .widget-area.social-icons-widget .youtube {
+    padding: 0 20px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .social-icons-widget {
+    top: 120px;
+  }
+  .widget-area.social-icons-widget .facebook, .widget-area.social-icons-widget .instagram, .widget-area.social-icons-widget .youtube {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .social-icons-widget {
+    top: 40px;
   }
 }

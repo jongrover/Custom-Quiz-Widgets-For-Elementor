@@ -39,29 +39,30 @@ Text Domain:  AstraChild
     display: none;
   }
   .social-icons-widget {
-    top: 125px;
+    top: 189px;
     right: auto;
+    left: 0;
     width: 100%;
     text-align: center;
     font-size: 2.3em;
+    background: rgb(246, 216, 48);
+    padding: 20px 0;
+    z-index: 0;
+    margin: 0;
+  }
+  .main-header-bar-navigation {
+    background: #ffffff;
   }
   .widget-area.social-icons-widget .facebook, .widget-area.social-icons-widget .instagram, .widget-area.social-icons-widget .youtube {
-    padding: 0 20px;
+    padding: 0 25px;
   }
-
-}
-
-@media only screen and (max-width: 600px) {
-  .social-icons-widget {
-    top: 120px;
-  }
-  .widget-area.social-icons-widget .facebook, .widget-area.social-icons-widget .instagram, .widget-area.social-icons-widget .youtube {
-    padding: 0 10px;
+  .site-content {
+    margin-top: 73px;
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 544px) {
   .social-icons-widget {
-    top: 40px;
+    top: 113px;
   }
 }

@@ -8,13 +8,40 @@
  * @link        https://wpastra.com/
  * @since       Astra 1.0.0
  */
-$x = true;
 $section_1 = astra_get_small_footer( 'footer-sml-section-1' );
 $section_2 = astra_get_small_footer( 'footer-sml-section-2' );
+
+$main_pages = array(
+  "home" => 25706,
+  "whylef" => 24981,
+  "about" => 25120,
+  "quotes" => 31379,
+  "vocabulary" => 31343,
+  "pastpresent" => 31358,
+  "texting" => 31370,
+  "quizzes" => 31327,
+  "songs" => 31400,
+  "karaoke" => 31406,
+  "games" => 27094
+);
+
+$is_main_page = true;
+
+global $wp_query;
+$id = $wp_query->post->ID;
+
+foreach ($main_pages as &$page_id) {
+  if ($page_id == $id) {
+    $is_main_page = true;
+    break;
+  } else {
+    $is_main_page = false;
+  }
+}
+
 ?>
 
-<?php if ($x === true) { ?>
-
+<?php if ($is_main_page) { ?>
   <div class="ast-small-footer footer-sml-layout-1">
   	<div class="ast-footer-overlay">
   		<div class="ast-container">
@@ -54,7 +81,7 @@ $section_2 = astra_get_small_footer( 'footer-sml-section-2' );
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
   }
 
   .copyright {

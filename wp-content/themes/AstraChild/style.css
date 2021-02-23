@@ -31,6 +31,15 @@ Text Domain:  AstraChild
   padding: 0 5px;
 }
 
+/* Fix leadin cta style */
+
+.leadinModal-reset button.leadinModal-close {
+  box-shadow: none;
+  text-align: right;
+}
+
+/* Devices */
+
 @media only screen and (max-width: 768px) {
   .relative-header {
     position: static;
@@ -58,6 +67,7 @@ Text Domain:  AstraChild
   }
   .site-content {
     margin-top: 73px;
+    margin-bottom: 86px;
   }
 }
 
